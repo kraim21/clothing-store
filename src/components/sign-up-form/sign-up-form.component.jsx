@@ -6,7 +6,7 @@ import {
 } from "../../utils/firebase/firebase.utils";
 
 import FormInput from "../form-input/form-input.component";
-import "./sign-up-form-styles.scss";
+import "./sign-up-form.styles.scss";
 import Button from "../button/button.component";
 
 const defaultFormFields = {
@@ -41,6 +41,8 @@ const SignUpForm = () => {
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
         alert("Username/Email is already used.");
+      } else {
+        console.log("user creation encountered an error", error);
       }
     }
   };

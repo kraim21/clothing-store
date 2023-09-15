@@ -40,8 +40,6 @@ provider.setCustomParameters({
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
-
-  console.log(userAuth);
 };
 
 export const auth = getAuth();
