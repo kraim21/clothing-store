@@ -15,6 +15,7 @@ import { Name } from "../product-card/product-card.styles";
 
 const CheckoutItem = ({ cartItem }) => {
   const { name, imageUrl, price, quantity } = cartItem;
+
   const { addItemToCart, removeItemToCart, clearCartItems } =
     useContext(CartContext);
 
